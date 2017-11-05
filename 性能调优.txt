@@ -1,0 +1,10 @@
+例如：pig脚本处理数据
+	一个reduce的启动时间大约在10多秒左右,在yarn中监控查看任务时,若看到reduce总的时间花费在20-30s左右时候,证明
+	这个reduce空闲或者处理的数据量很小,这时需要把reduce进行合并,用少的reduce处理相同的数据。理论上reduce越多
+	数据处理越快,但是考虑到启动时间的话就不是如此。假如一个任务用5个reduce就可以处理完,但是分配了100个reduce去处理,
+	这100个reduce在启动时间上就会足足花费100*100+s
+	pig通过设置参数控制reduce数量
+	set pig.exec.reducers.bytes.per.reducer 2000000000;
+	set pig.exec.reducers.max 120;
+	#reducers = MIN (pig.exec.reducers.max, total input size (in bytes) / bytes per reducer)
+	同理也map任务也是如此！

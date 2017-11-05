@@ -1,0 +1,238 @@
+2015-12-22 14:54:02,433 WARN  conf.Configuration (Configuration.java:<clinit>(627)) - DEPRECATED: hadoop-site.xml found in the classpath. Usage of hadoop-site.xml is deprecated. Instead use core-site.xml, mapred-site.xml and hdfs-site.xml to override properties of core-default.xml, mapred-default.xml and hdfs-default.xml respectively
+2015-12-22 14:54:02,639 INFO  conf.Configuration (Configuration.java:getConfResourceAsInputStream(2219)) - found resource core-site.xml at file:/D:/doc/hadoop-2.5.0-cdh5.2.0/share/hadoop/httpfs/tomcat/webapps/webhdfs/WEB-INF/classes/core-site.xml
+2015-12-22 14:54:02,768 WARN  conf.Configuration (Configuration.java:loadProperty(2522)) - java.io.BufferedInputStream@17b5e53e:an attempt to override final parameter: hadoop.tmp.dir;  Ignoring.
+2015-12-22 14:54:02,772 WARN  util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-12-22 14:54:02,788 INFO  security.Groups (Groups.java:refresh(202)) - clearing userToGroupsMap cache
+2015-12-22 14:54:02,800 INFO  conf.Configuration (Configuration.java:getConfResourceAsInputStream(2219)) - found resource yarn-site.xml at jar:file:/D:/doc/hadoop-2.5.0-cdh5.2.0/share/hadoop/tools/sources/hadoop-sls-2.5.0-cdh5.2.0-test-sources.jar!/yarn-site.xml
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/D:/doc/hadoop-2.5.0-cdh5.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/D:/doc/hadoop-2.5.0-cdh5.2.0/share/hadoop/httpfs/tomcat/webapps/webhdfs/WEB-INF/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/D:/doc/hadoop-2.5.0-cdh5.2.0/share/hadoop/kms/tomcat/webapps/kms/WEB-INF/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/D:/doc/hadoop-2.5.0-cdh5.2.0/share/hadoop/mapreduce1/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+2015-12-22 14:54:02,911 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.RMFatalEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$RMFatalEventDispatcher
+2015-12-22 14:54:03,217 INFO  security.NMTokenSecretManagerInRM (NMTokenSecretManagerInRM.java:<init>(75)) - NMTokenKeyRollingInterval: 86400000ms and NMTokenKeyActivationDelay: 900000ms
+2015-12-22 14:54:03,221 INFO  security.RMContainerTokenSecretManager (RMContainerTokenSecretManager.java:<init>(76)) - ContainerTokenKeyRollingInterval: 86400000ms and ContainerTokenKeyActivationDelay: 900000ms
+2015-12-22 14:54:03,224 INFO  security.AMRMTokenSecretManager (AMRMTokenSecretManager.java:<init>(94)) - AMRMTokenKeyRollingInterval: 86400000ms and AMRMTokenKeyActivationDelay: 900000 ms
+2015-12-22 14:54:03,237 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStoreEventType for class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore$ForwardingEventHandler
+2015-12-22 14:54:03,437 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.NodesListManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.NodesListManager
+2015-12-22 14:54:03,437 INFO  resourcemanager.ResourceManager (ResourceManager.java:createScheduler(257)) - Using Scheduler: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler
+2015-12-22 14:54:03,483 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.scheduler.event.SchedulerEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$SchedulerEventDispatcher
+2015-12-22 14:54:03,484 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationEventDispatcher
+2015-12-22 14:54:03,486 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationAttemptEventDispatcher
+2015-12-22 14:54:03,489 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$NodeEventDispatcher
+2015-12-22 14:54:03,490 INFO  security.RMContainerTokenSecretManager (RMContainerTokenSecretManager.java:rollMasterKey(104)) - Rolling master-key for container-tokens
+2015-12-22 14:54:03,508 INFO  security.NMTokenSecretManagerInRM (NMTokenSecretManagerInRM.java:rollMasterKey(95)) - Rolling master-key for nm-tokens
+2015-12-22 14:54:03,586 WARN  impl.MetricsConfig (MetricsConfig.java:loadFirst(124)) - Cannot locate configuration: tried hadoop-metrics2-resourcemanager.properties,hadoop-metrics2.properties
+2015-12-22 14:54:03,660 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(359)) - Scheduled snapshot period at 10 second(s).
+2015-12-22 14:54:03,660 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:start(201)) - ResourceManager metrics system started
+2015-12-22 14:54:03,776 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.RMAppManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.RMAppManager
+2015-12-22 14:54:03,782 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.amlauncher.AMLauncherEventType for class org.apache.hadoop.yarn.server.resourcemanager.MockRM$5
+2015-12-22 14:54:03,784 INFO  resourcemanager.RMNMInfo (RMNMInfo.java:<init>(63)) - Registered RMNMInfo MBean
+2015-12-22 14:54:03,787 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.ahs.WritingHistoryEventType for class org.apache.hadoop.yarn.server.resourcemanager.ahs.RMApplicationHistoryWriter$ForwardingEventHandler
+2015-12-22 14:54:03,788 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.ahs.WritingHistoryEventType for class org.apache.hadoop.yarn.server.resourcemanager.ahs.RMApplicationHistoryWriter$ForwardingEventHandler
+2015-12-22 14:54:03,788 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.ahs.WritingHistoryEventType for class org.apache.hadoop.yarn.server.resourcemanager.ahs.RMApplicationHistoryWriter$ForwardingEventHandler
+2015-12-22 14:54:03,788 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.ahs.WritingHistoryEventType for class org.apache.hadoop.yarn.server.resourcemanager.ahs.RMApplicationHistoryWriter$ForwardingEventHandler
+2015-12-22 14:54:03,788 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.ahs.WritingHistoryEventType for class org.apache.hadoop.yarn.server.resourcemanager.ahs.RMApplicationHistoryWriter$ForwardingEventHandler
+2015-12-22 14:54:03,788 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.ahs.WritingHistoryEventType for class org.apache.hadoop.yarn.server.resourcemanager.ahs.RMApplicationHistoryWriter$ForwardingEventHandler
+2015-12-22 14:54:03,789 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.ahs.WritingHistoryEventType for class org.apache.hadoop.yarn.server.resourcemanager.ahs.RMApplicationHistoryWriter$ForwardingEventHandler
+2015-12-22 14:54:03,789 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.ahs.WritingHistoryEventType for class org.apache.hadoop.yarn.server.resourcemanager.ahs.RMApplicationHistoryWriter$ForwardingEventHandler
+2015-12-22 14:54:03,789 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.ahs.WritingHistoryEventType for class org.apache.hadoop.yarn.server.resourcemanager.ahs.RMApplicationHistoryWriter$ForwardingEventHandler
+2015-12-22 14:54:03,789 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.ahs.WritingHistoryEventType for class org.apache.hadoop.yarn.server.resourcemanager.ahs.RMApplicationHistoryWriter$ForwardingEventHandler
+2015-12-22 14:54:03,791 INFO  util.HostsFileReader (HostsFileReader.java:refresh(129)) - Refreshing hosts (include/exclude) list
+2015-12-22 14:54:03,794 INFO  conf.Configuration (Configuration.java:getConfResourceAsInputStream(2219)) - found resource capacity-scheduler.xml at jar:file:/D:/doc/hadoop-2.5.0-cdh5.2.0/share/hadoop/tools/sources/hadoop-streaming-2.5.0-cdh5.2.0-test-sources.jar!/capacity-scheduler.xml
+2015-12-22 14:54:03,878 INFO  capacity.ParentQueue (ParentQueue.java:setupQueueConfigs(192)) - root, capacity=1.0, asboluteCapacity=1.0, maxCapacity=1.0, asboluteMaxCapacity=1.0, state=RUNNING, acls=SUBMIT_APPLICATIONS:*ADMINISTER_QUEUE:*
+2015-12-22 14:54:03,879 INFO  capacity.ParentQueue (ParentQueue.java:<init>(154)) - Initialized parent-queue root name=root, fullname=root
+2015-12-22 14:54:03,888 INFO  capacity.LeafQueue (LeafQueue.java:setupQueueConfigs(271)) - Initializing default
+capacity = 1.0 [= (float) configuredCapacity / 100 ]
+asboluteCapacity = 1.0 [= parentAbsoluteCapacity * capacity ]
+maxCapacity = 1.0 [= configuredMaxCapacity ]
+absoluteMaxCapacity = 1.0 [= 1.0 maximumCapacity undefined, (parentAbsoluteMaxCapacity * maximumCapacity) / 100 otherwise ]
+userLimit = 100 [= configuredUserLimit ]
+userLimitFactor = 1.0 [= configuredUserLimitFactor ]
+maxApplications = 10000 [= configuredMaximumSystemApplicationsPerQueue or (int)(configuredMaximumSystemApplications * absoluteCapacity)]
+maxApplicationsPerUser = 10000 [= (int)(maxApplications * (userLimit / 100.0f) * userLimitFactor) ]
+maxActiveApplications = 1 [= max((int)ceil((clusterResourceMemory / minimumAllocation) * maxAMResourcePerQueuePercent * absoluteMaxCapacity),1) ]
+maxActiveAppsUsingAbsCap = 1 [= max((int)ceil((clusterResourceMemory / minimumAllocation) *maxAMResourcePercent * absoluteCapacity),1) ]
+maxActiveApplicationsPerUser = 1 [= max((int)(maxActiveApplications * (userLimit / 100.0f) * userLimitFactor),1) ]
+usedCapacity = 0.0 [= usedResourcesMemory / (clusterResourceMemory * absoluteCapacity)]
+absoluteUsedCapacity = 0.0 [= usedResourcesMemory / clusterResourceMemory]
+maxAMResourcePerQueuePercent = 0.1 [= configuredMaximumAMResourcePercent ]
+minimumAllocationFactor = 0.875 [= (float)(maximumAllocationMemory - minimumAllocationMemory) / maximumAllocationMemory ]
+numContainers = 0 [= currentNumContainers ]
+state = RUNNING [= configuredState ]
+acls = SUBMIT_APPLICATIONS:*ADMINISTER_QUEUE:* [= configuredAcls ]
+nodeLocalityDelay = 40
+
+2015-12-22 14:54:03,888 INFO  capacity.CapacityScheduler (CapacityScheduler.java:parseQueue(474)) - Initialized queue: default: capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>, usedCapacity=0.0, absoluteUsedCapacity=0.0, numApps=0, numContainers=0
+2015-12-22 14:54:03,888 INFO  capacity.CapacityScheduler (CapacityScheduler.java:parseQueue(474)) - Initialized queue: root: numChildQueue= 1, capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>usedCapacity=0.0, numApps=0, numContainers=0
+2015-12-22 14:54:03,889 INFO  capacity.CapacityScheduler (CapacityScheduler.java:initializeQueues(386)) - Initialized root queue root: numChildQueue= 1, capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>usedCapacity=0.0, numApps=0, numContainers=0
+2015-12-22 14:54:03,889 INFO  capacity.CapacityScheduler (CapacityScheduler.java:initScheduler(254)) - Initialized CapacityScheduler with calculator=class org.apache.hadoop.yarn.util.resource.DefaultResourceCalculator, minimumAllocation=<<memory:1024, vCores:1>>, maximumAllocation=<<memory:8192, vCores:32>>, asynchronousScheduling=false, asyncScheduleInterval=5ms
+2015-12-22 14:54:03,899 INFO  resourcemanager.ResourceManager (ResourceManager.java:transitionToActive(901)) - Transitioning to active state
+2015-12-22 14:54:03,899 DEBUG security.UserGroupInformation (UserGroupInformation.java:logPrivilegedAction(1638)) - PrivilegedAction as:pc (auth:SIMPLE) from:org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.transitionToActive(ResourceManager.java:906)
+2015-12-22 14:54:03,901 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service Dispatcher is started
+2015-12-22 14:54:03,901 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore is started
+2015-12-22 14:54:03,901 INFO  event.AsyncDispatcher (AsyncDispatcher.java:run(97)) - AsyncDispatcher的阻塞队列  eventQueue  :  []
+2015-12-22 14:54:03,901 DEBUG service.CompositeService (CompositeService.java:serviceStart(115)) - RMActiveServices: starting services, size=13
+2015-12-22 14:54:03,911 INFO  security.RMContainerTokenSecretManager (RMContainerTokenSecretManager.java:rollMasterKey(104)) - Rolling master-key for container-tokens
+2015-12-22 14:54:03,911 INFO  security.RMContainerTokenSecretManager (RMContainerTokenSecretManager.java:rollMasterKey(109)) - Going to activate master-key with key-id -1505277702 in 900000ms
+2015-12-22 14:54:03,911 INFO  security.NMTokenSecretManagerInRM (NMTokenSecretManagerInRM.java:rollMasterKey(95)) - Rolling master-key for nm-tokens
+2015-12-22 14:54:03,912 INFO  security.NMTokenSecretManagerInRM (NMTokenSecretManagerInRM.java:rollMasterKey(100)) - Going to activate master-key with key-id -2114035672 in 900000ms
+2015-12-22 14:54:03,912 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:updateCurrentKey(308)) - Updating the current master key for generating delegation tokens
+2015-12-22 14:54:03,913 INFO  security.RMDelegationTokenSecretManager (RMDelegationTokenSecretManager.java:storeNewMasterKey(87)) - storing master key with keyID 1
+2015-12-22 14:54:03,914 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service org.apache.hadoop.yarn.server.resourcemanager.RMSecretManagerService is started
+2015-12-22 14:54:03,914 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:run(621)) - Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2015-12-22 14:54:03,915 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:updateCurrentKey(308)) - Updating the current master key for generating delegation tokens
+2015-12-22 14:54:03,915 INFO  security.RMDelegationTokenSecretManager (RMDelegationTokenSecretManager.java:storeNewMasterKey(87)) - storing master key with keyID 2
+2015-12-22 14:54:03,916 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service org.apache.hadoop.yarn.server.resourcemanager.rmcontainer.ContainerAllocationExpirer is started
+2015-12-22 14:54:03,916 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service AMLivelinessMonitor is started
+2015-12-22 14:54:03,917 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service AMLivelinessMonitor is started
+2015-12-22 14:54:03,917 DEBUG service.CompositeService (CompositeService.java:serviceStart(115)) - org.apache.hadoop.yarn.server.resourcemanager.ahs.RMApplicationHistoryWriter: starting services, size=2
+2015-12-22 14:54:03,917 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service org.apache.hadoop.yarn.server.applicationhistoryservice.NullApplicationHistoryStore is started
+2015-12-22 14:54:03,917 DEBUG service.CompositeService (CompositeService.java:serviceStart(115)) - org.apache.hadoop.yarn.server.resourcemanager.ahs.RMApplicationHistoryWriter$MultiThreadedDispatcher: starting services, size=10
+2015-12-22 14:54:03,918 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service Dispatcher is started
+2015-12-22 14:54:03,918 INFO  event.AsyncDispatcher (AsyncDispatcher.java:run(97)) - AsyncDispatcher的阻塞队列  eventQueue  :  []
+2015-12-22 14:54:03,918 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service Dispatcher is started
+2015-12-22 14:54:03,918 INFO  event.AsyncDispatcher (AsyncDispatcher.java:run(97)) - AsyncDispatcher的阻塞队列  eventQueue  :  []
+2015-12-22 14:54:03,919 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service Dispatcher is started
+2015-12-22 14:54:03,919 INFO  event.AsyncDispatcher (AsyncDispatcher.java:run(97)) - AsyncDispatcher的阻塞队列  eventQueue  :  []
+2015-12-22 14:54:03,919 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service Dispatcher is started
+2015-12-22 14:54:03,919 INFO  event.AsyncDispatcher (AsyncDispatcher.java:run(97)) - AsyncDispatcher的阻塞队列  eventQueue  :  []
+2015-12-22 14:54:03,920 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service Dispatcher is started
+2015-12-22 14:54:03,920 INFO  event.AsyncDispatcher (AsyncDispatcher.java:run(97)) - AsyncDispatcher的阻塞队列  eventQueue  :  []
+2015-12-22 14:54:03,920 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service Dispatcher is started
+2015-12-22 14:54:03,920 INFO  event.AsyncDispatcher (AsyncDispatcher.java:run(97)) - AsyncDispatcher的阻塞队列  eventQueue  :  []
+2015-12-22 14:54:03,921 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service Dispatcher is started
+2015-12-22 14:54:03,921 INFO  event.AsyncDispatcher (AsyncDispatcher.java:run(97)) - AsyncDispatcher的阻塞队列  eventQueue  :  []
+2015-12-22 14:54:03,921 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service Dispatcher is started
+2015-12-22 14:54:03,921 INFO  event.AsyncDispatcher (AsyncDispatcher.java:run(97)) - AsyncDispatcher的阻塞队列  eventQueue  :  []
+2015-12-22 14:54:03,922 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service Dispatcher is started
+2015-12-22 14:54:03,922 INFO  event.AsyncDispatcher (AsyncDispatcher.java:run(97)) - AsyncDispatcher的阻塞队列  eventQueue  :  []
+2015-12-22 14:54:03,922 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service Dispatcher is started
+2015-12-22 14:54:03,922 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service org.apache.hadoop.yarn.server.resourcemanager.ahs.RMApplicationHistoryWriter$MultiThreadedDispatcher is started
+2015-12-22 14:54:03,922 INFO  event.AsyncDispatcher (AsyncDispatcher.java:run(97)) - AsyncDispatcher的阻塞队列  eventQueue  :  []
+2015-12-22 14:54:03,923 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service org.apache.hadoop.yarn.server.resourcemanager.ahs.RMApplicationHistoryWriter is started
+2015-12-22 14:54:03,923 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service org.apache.hadoop.yarn.server.resourcemanager.NodesListManager is started
+2015-12-22 14:54:03,923 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler is started
+2015-12-22 14:54:03,923 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$SchedulerEventDispatcher is started
+2015-12-22 14:54:03,923 INFO  resourcemanager.ResourceManager (ResourceManager.java:run(564)) - SchedulerEventDispatcher类阻塞队列 : []
+2015-12-22 14:54:03,924 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service NMLivelinessMonitor is started
+2015-12-22 14:54:03,924 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service org.apache.hadoop.yarn.server.resourcemanager.ResourceTrackerService is started
+2015-12-22 14:54:03,924 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService is started
+2015-12-22 14:54:03,924 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service org.apache.hadoop.yarn.server.resourcemanager.ClientRMService is started
+2015-12-22 14:54:03,925 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher is started
+2015-12-22 14:54:03,925 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service RMActiveServices is started
+2015-12-22 14:54:03,925 INFO  resourcemanager.ResourceManager (ResourceManager.java:transitionToActive(915)) - Transitioned to active state
+2015-12-22 14:54:03,925 DEBUG service.CompositeService (CompositeService.java:serviceStart(115)) - ResourceManager: starting services, size=2
+2015-12-22 14:54:03,925 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service Dispatcher is started
+2015-12-22 14:54:03,926 INFO  event.AsyncDispatcher (AsyncDispatcher.java:run(97)) - AsyncDispatcher的阻塞队列  eventQueue  :  []
+2015-12-22 14:54:03,926 DEBUG service.CompositeService (CompositeService.java:serviceStart(115)) - org.apache.hadoop.yarn.server.resourcemanager.AdminService: starting services, size=0
+2015-12-22 14:54:03,926 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service org.apache.hadoop.yarn.server.resourcemanager.AdminService is started
+2015-12-22 14:54:03,926 DEBUG service.AbstractService (AbstractService.java:start(192)) - Service ResourceManager is started
+2015-12-22 14:54:06,532 INFO  util.RackResolver (RackResolver.java:coreResolve(109)) - Resolved h1 to /default-rack
+2015-12-22 14:54:06,535 INFO  event.AsyncDispatcher (AsyncDispatcher.java:handle(224)) - GenericEventHandler的event类型  : class org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeEventType
+2015-12-22 14:54:06,535 INFO  event.AsyncDispatcher (AsyncDispatcher.java:handle(235)) - 将事件event : class org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeEventType加入到阻塞队列中
+2015-12-22 14:54:06,535 DEBUG event.AsyncDispatcher (AsyncDispatcher.java:dispatch(163)) - Dispatching 事件类型 :  org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeStartedEvent.EventType: STARTED
+2015-12-22 14:54:06,536 INFO  event.AsyncDispatcher (AsyncDispatcher.java:dispatch(171)) - AsyncDispatcher类dispatch方法中handler类型 : org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$NodeEventDispatcher
+2015-12-22 14:54:06,536 INFO  resourcemanager.ResourceManager (ResourceManager.java:handle(747)) - h1:1234
+2015-12-22 14:54:06,536 INFO  resourcemanager.ResourceTrackerService (ResourceTrackerService.java:registerNodeManager(296)) - NodeManager from node h1(cmPort: 1234 httpPort: 2) registered with capability: <memory:15120, vCores:14>, assigned nodeId h1:1234
+2015-12-22 14:54:06,536 INFO  resourcemanager.ResourceManager (ResourceManager.java:handle(748)) - 调用RM中的NodeEventDispatcher,跳转到类org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeImpl的handle方法
+2015-12-22 14:54:06,536 DEBUG rmnode.RMNodeImpl (RMNodeImpl.java:handle(382)) - Processing h1:1234 of type STARTED
+2015-12-22 14:54:06,537 INFO  rmnode.RMNodeImpl (RMNodeImpl.java:handle(386)) - oldState状态 :  NEW
+2015-12-22 14:54:06,537 INFO  rmnode.RMNodeImpl (RMNodeImpl.java:handle(387)) - stateMachine类型  :  org.apache.hadoop.yarn.state.StateMachineFactory$InternalStateMachine
+2015-12-22 14:54:06,545 INFO  mortbay.log (Slf4jLog.java:info(67)) - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-12-22 14:54:06,545 INFO  mortbay.log (Slf4jLog.java:info(67)) - StateMachineFactory类内部类InternalStateMachine的doTransition方法
+2015-12-22 14:54:06,545 INFO  mortbay.log (Slf4jLog.java:info(67)) - StateMachineFactory类中transition类型 : org.apache.hadoop.yarn.state.StateMachineFactory$SingleInternalArc
+2015-12-22 14:54:06,545 INFO  mortbay.log (Slf4jLog.java:info(67)) - SingleInternalArc类的hook类型 : org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeImpl$AddNodeTransition
+2015-12-22 14:54:06,546 INFO  rmnode.RMNodeImpl (RMNodeImpl.java:transition(514)) - RMNode中Event Handler类型 :  org.apache.hadoop.yarn.event.AsyncDispatcher$GenericEventHandler
+2015-12-22 14:54:06,547 INFO  event.AsyncDispatcher (AsyncDispatcher.java:handle(224)) - GenericEventHandler的event类型  : class org.apache.hadoop.yarn.server.resourcemanager.scheduler.event.SchedulerEventType
+2015-12-22 14:54:06,547 INFO  event.AsyncDispatcher (AsyncDispatcher.java:handle(235)) - 将事件event : class org.apache.hadoop.yarn.server.resourcemanager.scheduler.event.SchedulerEventType加入到阻塞队列中
+2015-12-22 14:54:06,548 INFO  event.AsyncDispatcher (AsyncDispatcher.java:handle(224)) - GenericEventHandler的event类型  : class org.apache.hadoop.yarn.server.resourcemanager.NodesListManagerEventType
+2015-12-22 14:54:06,548 INFO  event.AsyncDispatcher (AsyncDispatcher.java:handle(235)) - 将事件event : class org.apache.hadoop.yarn.server.resourcemanager.NodesListManagerEventType加入到阻塞队列中
+2015-12-22 14:54:06,548 INFO  rmnode.RMNodeImpl (RMNodeImpl.java:handle(395)) - h1:1234 Node Transitioned from NEW to RUNNING
+2015-12-22 14:54:06,549 INFO  event.AsyncDispatcher (AsyncDispatcher.java:run(97)) - AsyncDispatcher的阻塞队列  eventQueue  :  [EventType: NODE_ADDED, EventType: NODE_USABLE]
+2015-12-22 14:54:06,549 DEBUG event.AsyncDispatcher (AsyncDispatcher.java:dispatch(163)) - Dispatching 事件类型 :  org.apache.hadoop.yarn.server.resourcemanager.scheduler.event.NodeAddedSchedulerEvent.EventType: NODE_ADDED
+2015-12-22 14:54:06,549 INFO  event.AsyncDispatcher (AsyncDispatcher.java:dispatch(171)) - AsyncDispatcher类dispatch方法中handler类型 : org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$SchedulerEventDispatcher
+2015-12-22 14:54:06,549 INFO  event.AsyncDispatcher (AsyncDispatcher.java:run(97)) - AsyncDispatcher的阻塞队列  eventQueue  :  [EventType: NODE_USABLE]
+2015-12-22 14:54:06,549 DEBUG event.AsyncDispatcher (AsyncDispatcher.java:dispatch(163)) - Dispatching 事件类型 :  org.apache.hadoop.yarn.server.resourcemanager.NodesListManagerEvent.EventType: NODE_USABLE
+2015-12-22 14:54:06,549 INFO  event.AsyncDispatcher (AsyncDispatcher.java:dispatch(171)) - AsyncDispatcher类dispatch方法中handler类型 : org.apache.hadoop.yarn.server.resourcemanager.NodesListManager
+2015-12-22 14:54:06,549 INFO  event.AsyncDispatcher (AsyncDispatcher.java:run(97)) - AsyncDispatcher的阻塞队列  eventQueue  :  []
+2015-12-22 14:54:06,550 INFO  resourcemanager.ResourceManager (ResourceManager.java:run(572)) - SchedulerEventDispatcher类的scheduler对象类型  : org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler
+2015-12-22 14:54:06,550 INFO  capacity.CapacityScheduler (CapacityScheduler.java:handle(782)) - CapacityScheduler类的添加节点操作
+2015-12-22 14:54:06,551 INFO  capacity.CapacityScheduler (CapacityScheduler.java:addNode(849)) - Added node h1:1234 clusterResource: <memory:15120, vCores:14>
+2015-12-22 14:54:06,552 INFO  resourcemanager.ResourceManager (ResourceManager.java:run(564)) - SchedulerEventDispatcher类阻塞队列 : []
+2015-12-22 14:54:06,563 INFO  event.AsyncDispatcher (AsyncDispatcher.java:handle(224)) - GenericEventHandler的event类型  : class org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeEventType
+2015-12-22 14:54:06,564 INFO  event.AsyncDispatcher (AsyncDispatcher.java:handle(235)) - 将事件event : class org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeEventType加入到阻塞队列中
+2015-12-22 14:54:06,564 DEBUG event.AsyncDispatcher (AsyncDispatcher.java:dispatch(163)) - Dispatching 事件类型 :  org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeStatusEvent.EventType: STATUS_UPDATE
+2015-12-22 14:54:06,564 INFO  event.AsyncDispatcher (AsyncDispatcher.java:dispatch(171)) - AsyncDispatcher类dispatch方法中handler类型 : org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$NodeEventDispatcher
+2015-12-22 14:54:06,564 INFO  resourcemanager.ResourceManager (ResourceManager.java:handle(747)) - h1:1234
+2015-12-22 14:54:06,564 INFO  resourcemanager.ResourceManager (ResourceManager.java:handle(748)) - 调用RM中的NodeEventDispatcher,跳转到类org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeImpl的handle方法
+2015-12-22 14:54:06,564 DEBUG rmnode.RMNodeImpl (RMNodeImpl.java:handle(382)) - Processing h1:1234 of type STATUS_UPDATE
+2015-12-22 14:54:06,564 INFO  rmnode.RMNodeImpl (RMNodeImpl.java:handle(386)) - oldState状态 :  RUNNING
+2015-12-22 14:54:06,564 INFO  rmnode.RMNodeImpl (RMNodeImpl.java:handle(387)) - stateMachine类型  :  org.apache.hadoop.yarn.state.StateMachineFactory$InternalStateMachine
+2015-12-22 14:54:06,564 INFO  mortbay.log (Slf4jLog.java:info(67)) - StateMachineFactory类内部类InternalStateMachine的doTransition方法
+2015-12-22 14:54:06,564 INFO  mortbay.log (Slf4jLog.java:info(67)) - StateMachineFactory类中transition类型 : org.apache.hadoop.yarn.state.StateMachineFactory$MultipleInternalArc
+2015-12-22 14:54:06,565 INFO  mortbay.log (Slf4jLog.java:info(67)) - MultipleInternalArc类的hook类型 : org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeImpl$StatusUpdateWhenHealthyTransition
+2015-12-22 14:54:06,565 INFO  event.AsyncDispatcher (AsyncDispatcher.java:handle(224)) - GenericEventHandler的event类型  : class org.apache.hadoop.yarn.server.resourcemanager.scheduler.event.SchedulerEventType
+2015-12-22 14:54:06,565 INFO  event.AsyncDispatcher (AsyncDispatcher.java:handle(235)) - 将事件event : class org.apache.hadoop.yarn.server.resourcemanager.scheduler.event.SchedulerEventType加入到阻塞队列中
+2015-12-22 14:54:06,565 INFO  event.AsyncDispatcher (AsyncDispatcher.java:run(97)) - AsyncDispatcher的阻塞队列  eventQueue  :  [EventType: NODE_UPDATE]
+2015-12-22 14:54:06,565 DEBUG event.AsyncDispatcher (AsyncDispatcher.java:dispatch(163)) - Dispatching 事件类型 :  org.apache.hadoop.yarn.server.resourcemanager.scheduler.event.NodeUpdateSchedulerEvent.EventType: NODE_UPDATE
+2015-12-22 14:54:06,566 INFO  event.AsyncDispatcher (AsyncDispatcher.java:dispatch(171)) - AsyncDispatcher类dispatch方法中handler类型 : org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$SchedulerEventDispatcher
+2015-12-22 14:54:06,566 INFO  resourcemanager.ResourceManager (ResourceManager.java:run(572)) - SchedulerEventDispatcher类的scheduler对象类型  : org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler
+2015-12-22 14:54:06,566 DEBUG capacity.CapacityScheduler (CapacityScheduler.java:nodeUpdate(690)) - nodeUpdate: h1:1234 clusterResources: <memory:15120, vCores:14>
+2015-12-22 14:54:06,566 DEBUG capacity.CapacityScheduler (CapacityScheduler.java:nodeUpdate(717)) - Node being looked for scheduling h1:1234 availableResource: <memory:15120, vCores:14>
+2015-12-22 14:54:06,566 DEBUG capacity.CapacityScheduler (CapacityScheduler.java:allocateContainersToNode(765)) - Trying to schedule on node: h1, available: <memory:15120, vCores:14>
+2015-12-22 14:54:06,566 DEBUG capacity.ParentQueue (ParentQueue.java:assignContainers(560)) - Trying to assign containers to child-queue of root
+2015-12-22 14:54:06,566 DEBUG capacity.ParentQueue (ParentQueue.java:printChildQueues(691)) - printChildQueues - queue: root child-queues: root.default(0.0), 
+2015-12-22 14:54:06,567 DEBUG capacity.ParentQueue (ParentQueue.java:assignContainersToChildQueues(653)) - Trying to assign to queue: root.default stats: default: capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>, usedCapacity=0.0, absoluteUsedCapacity=0.0, numApps=0, numContainers=0
+2015-12-22 14:54:06,567 DEBUG capacity.LeafQueue (LeafQueue.java:assignContainers(807)) - assignContainers: node=h1 #applications=0
+2015-12-22 14:54:06,567 DEBUG capacity.ParentQueue (ParentQueue.java:assignContainersToChildQueues(658)) - Assigned to queue: root.default stats: default: capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>, usedCapacity=0.0, absoluteUsedCapacity=0.0, numApps=0, numContainers=0 --> <memory:0, vCores:0>, NODE_LOCAL
+2015-12-22 14:54:06,567 INFO  resourcemanager.ResourceManager (ResourceManager.java:run(564)) - SchedulerEventDispatcher类阻塞队列 : []
+2015-12-22 14:54:06,567 INFO  event.AsyncDispatcher (AsyncDispatcher.java:run(97)) - AsyncDispatcher的阻塞队列  eventQueue  :  []
+2015-12-22 14:54:06,593 DEBUG service.AbstractService (AbstractService.java:enterState(444)) - Service: ResourceManager entered state INITED
+2015-12-22 14:54:06,593 INFO  conf.Configuration (Configuration.java:getConfResourceAsInputStream(2219)) - found resource core-site.xml at file:/D:/doc/hadoop-2.5.0-cdh5.2.0/share/hadoop/httpfs/tomcat/webapps/webhdfs/WEB-INF/classes/core-site.xml
+2015-12-22 14:54:06,615 WARN  conf.Configuration (Configuration.java:loadProperty(2522)) - java.io.BufferedInputStream@8a62f66:an attempt to override final parameter: hadoop.tmp.dir;  Ignoring.
+2015-12-22 14:54:06,616 DEBUG util.PerformanceAdvisory (JniBasedUnixGroupsMappingWithFallback.java:<init>(41)) - Falling back to shell based
+2015-12-22 14:54:06,616 DEBUG security.JniBasedUnixGroupsMappingWithFallback (JniBasedUnixGroupsMappingWithFallback.java:<init>(45)) - Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping
+2015-12-22 14:54:06,616 DEBUG security.Groups (Groups.java:<init>(91)) - Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=300000; warningDeltaMs=5000
+2015-12-22 14:54:06,616 INFO  security.Groups (Groups.java:refresh(202)) - clearing userToGroupsMap cache
+2015-12-22 14:54:06,618 INFO  conf.Configuration (Configuration.java:getConfResourceAsInputStream(2219)) - found resource yarn-site.xml at jar:file:/D:/doc/hadoop-2.5.0-cdh5.2.0/share/hadoop/tools/sources/hadoop-sls-2.5.0-cdh5.2.0-test-sources.jar!/yarn-site.xml
+2015-12-22 14:54:06,651 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.RMFatalEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$RMFatalEventDispatcher
+2015-12-22 14:54:06,654 DEBUG service.CompositeService (CompositeService.java:addService(73)) - Adding service Dispatcher
+2015-12-22 14:54:06,655 DEBUG service.CompositeService (CompositeService.java:addService(73)) - Adding service org.apache.hadoop.yarn.server.resourcemanager.AdminService
+2015-12-22 14:54:06,655 DEBUG service.AbstractService (AbstractService.java:enterState(444)) - Service: RMActiveServices entered state INITED
+2015-12-22 14:54:06,655 INFO  security.NMTokenSecretManagerInRM (NMTokenSecretManagerInRM.java:<init>(75)) - NMTokenKeyRollingInterval: 86400000ms and NMTokenKeyActivationDelay: 900000ms
+2015-12-22 14:54:06,656 INFO  security.RMContainerTokenSecretManager (RMContainerTokenSecretManager.java:<init>(76)) - ContainerTokenKeyRollingInterval: 86400000ms and ContainerTokenKeyActivationDelay: 900000ms
+2015-12-22 14:54:06,656 INFO  security.AMRMTokenSecretManager (AMRMTokenSecretManager.java:<init>(94)) - AMRMTokenKeyRollingInterval: 86400000ms and AMRMTokenKeyActivationDelay: 900000 ms
+2015-12-22 14:54:06,657 DEBUG service.CompositeService (CompositeService.java:addService(73)) - Adding service org.apache.hadoop.yarn.server.resourcemanager.RMSecretManagerService
+2015-12-22 14:54:06,657 DEBUG service.CompositeService (CompositeService.java:addService(73)) - Adding service org.apache.hadoop.yarn.server.resourcemanager.rmcontainer.ContainerAllocationExpirer
+2015-12-22 14:54:06,657 DEBUG service.CompositeService (CompositeService.java:addService(73)) - Adding service AMLivelinessMonitor
+2015-12-22 14:54:06,657 DEBUG service.CompositeService (CompositeService.java:addService(73)) - Adding service AMLivelinessMonitor
+2015-12-22 14:54:06,657 DEBUG service.AbstractService (AbstractService.java:enterState(444)) - Service: org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore entered state INITED
+2015-12-22 14:54:06,657 DEBUG service.AbstractService (AbstractService.java:enterState(444)) - Service: Dispatcher entered state INITED
+2015-12-22 14:54:06,657 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStoreEventType for class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore$ForwardingEventHandler
+2015-12-22 14:54:06,657 DEBUG service.CompositeService (CompositeService.java:addService(73)) - Adding service org.apache.hadoop.yarn.server.resourcemanager.ahs.RMApplicationHistoryWriter
+2015-12-22 14:54:06,658 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.NodesListManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.NodesListManager
+2015-12-22 14:54:06,658 DEBUG service.CompositeService (CompositeService.java:addService(73)) - Adding service org.apache.hadoop.yarn.server.resourcemanager.NodesListManager
+2015-12-22 14:54:06,658 INFO  resourcemanager.ResourceManager (ResourceManager.java:createScheduler(257)) - Using Scheduler: org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler
+2015-12-22 14:54:06,679 DEBUG service.CompositeService (CompositeService.java:addService(73)) - Adding service org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler
+2015-12-22 14:54:06,679 DEBUG service.CompositeService (CompositeService.java:addService(73)) - Adding service org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$SchedulerEventDispatcher
+2015-12-22 14:54:06,679 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.scheduler.event.SchedulerEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$SchedulerEventDispatcher
+2015-12-22 14:54:06,679 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationEventDispatcher
+2015-12-22 14:54:06,679 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationAttemptEventDispatcher
+2015-12-22 14:54:06,679 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$NodeEventDispatcher
+2015-12-22 14:54:06,679 DEBUG service.CompositeService (CompositeService.java:addService(73)) - Adding service NMLivelinessMonitor
+2015-12-22 14:54:06,680 INFO  security.RMContainerTokenSecretManager (RMContainerTokenSecretManager.java:rollMasterKey(104)) - Rolling master-key for container-tokens
+2015-12-22 14:54:06,680 INFO  security.NMTokenSecretManagerInRM (NMTokenSecretManagerInRM.java:rollMasterKey(95)) - Rolling master-key for nm-tokens
+2015-12-22 14:54:06,680 DEBUG service.CompositeService (CompositeService.java:addService(73)) - Adding service org.apache.hadoop.yarn.server.resourcemanager.ResourceTrackerService
+2015-12-22 14:54:06,680 WARN  impl.MetricsSystemImpl (MetricsSystemImpl.java:init(161)) - ResourceManager metrics system already initialized!
+2015-12-22 14:54:06,680 DEBUG service.CompositeService (CompositeService.java:addService(73)) - Adding service org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService
+2015-12-22 14:54:06,680 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.RMAppManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.RMAppManager
+2015-12-22 14:54:06,680 DEBUG service.CompositeService (CompositeService.java:addService(73)) - Adding service org.apache.hadoop.yarn.server.resourcemanager.ClientRMService
+2015-12-22 14:54:06,681 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(193)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.amlauncher.AMLauncherEventType for class org.apache.hadoop.yarn.server.resourcemanager.MockRM$5
+2015-12-22 14:54:06,681 DEBUG service.CompositeService (CompositeService.java:addService(73)) - Adding service org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher
+2015-12-22 14:54:06,681 WARN  util.MBeans (MBeans.java:getMBeanName(94)) - Error creating MBean object name: Hadoop:service=ResourceManager,name=RMNMInfo
+org.apache.hadoop.metrics2.MetricsException: org.apache.hadoop.metrics2.MetricsException: Hadoop:service=ResourceManager,name=RMNMInfo already exists!
+
+	
