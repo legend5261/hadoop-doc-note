@@ -1,0 +1,21 @@
+1.机器间同步时间：
+	(1)选择一台机器作为主机(服务器)，查看本机时间(date)，设置时区(tzselect)，修改时间(date -s 00:00:00)
+	(2)写入硬盘时间(hwclock -w)
+	--主机时间设置完毕
+	(3)配置主机环境(vi /etc/ntp.conf)
+		后面加上: 
+		server 127.127.1.0
+		fudge 127.127.1.0 stratum 10
+		重新启动服务
+			service ntpd stop
+			service ntpd start (仅主机启动ntpd服务,其他机器同步此机器时间要关闭ntpd服务)
+	(4)其他机器同步
+		等待几分钟，在其他机器上同步主机时间(时区一致)：
+			ntpdate ip地址(主机)
+	(5)根据需要，可以让分机器定时自动同步时间
+		crontab命令：
+			-l 查看
+			-e 编辑   编辑内容 */12 * * * ntpdate 主机ip   (*/12 * * * 表示：/分，时，天，月) 
+2.hdfs DataNode出问题一般影响不是太大，NameNode挂掉重启后恢复丢失的数据(只能恢复一段时间内的数据,SecondNameNode只合并并保存一段时间内
+NameNode上的数据,并不是所有的)，移动SecondaryNameNode机器上存储的文件恢复到NameNode中。
+例：jyibd35为SecondaryNameNode,存储目录为/data01/dfs/snn/将下面目录移动到NameNode上
